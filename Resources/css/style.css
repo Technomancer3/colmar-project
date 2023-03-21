@@ -1,0 +1,40 @@
+html {
+    font-family: Helvetica, sans-serif;
+    font-size: 22px;
+}
+
+.header {
+    position: fixed;
+    height: 2.9rem;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} 
+.header .logo {
+    display: inline-flex;
+}   
+.header img {
+    margin-left: 1.09rem;
+}
+.header span {
+    font-weight: bold;
+    color: rgb(95, 95, 95);
+}
+.header h1 {
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: gray;
+}
+.header .nav {
+    display: inline-flex;
+    justify-content: space-around;
+    font-size: 1rem;
+    margin-right: 1.09rem;
+    color: rgb(95, 95, 95);
+    font-weight:500;
+}
+.header .nav p {
+    margin-left: 0.72rem;
+}
