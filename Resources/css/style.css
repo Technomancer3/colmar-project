@@ -1,9 +1,29 @@
+html, body, div, span, applet, object, iframe, h1, 
+h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, 
+address, big, cite, code, del, dfn, em, font, img, ins, kbd, 
+q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, 
+center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
 html {
     font-family: Helvetica, sans-serif;
     font-size: 22px;
+    padding-top: 0;
 }
-
+.main {
+    position: relative;
+    z-index: 1;
+    padding-top: 2.9rem;
+}
+/*header*/
 .header {
+    z-index: 2;
     position: fixed;
     height: 2.9rem;
     width: 100%;
@@ -37,4 +57,51 @@ html {
 }
 .header .nav p {
     margin-left: 0.72rem;
+}
+
+.start {
+    background-color: rgb(212, 212, 212);
+    display: flex;
+    width: 100%;
+    height: auto;
+
+}
+.start img {
+    max-width: 60%;
+    height: auto;
+    padding-left: 1.7rem;
+    padding-top: 2.3rem;
+    padding-bottom: 2.3rem;
+}
+.start .startinfo {
+    font-weight: bold;
+    color: rgb(78, 78, 78);
+    padding-left: 1.7rem;
+    padding-right: 3.63rem;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.start h1 {
+    font-size: 2rem;
+    font-weight:bolder;
+    margin-bottom: 1.45rem;
+}
+.start p {
+    font-size: 1.15rem;
+    margin-bottom: 1.45rem;
+}
+.start .button{
+    background-color: rgb(78, 78, 78);
+    height: 3.3rem;
+    width: 98%;
+
+}
+.start .button h3{
+    font-size: 1rem ;
+    color: white;
+    padding-top: 1.06rem;
+    text-align: center;
+    font-weight: 400;
+    
 }
