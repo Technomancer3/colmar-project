@@ -58,7 +58,7 @@ html {
 .header .nav p {
     margin-left: 0.72rem;
 }
-
+/*header*/
 .start {
     background-color: rgb(212, 212, 212);
     display: flex;
@@ -95,13 +95,90 @@ html {
     background-color: rgb(78, 78, 78);
     height: 3.3rem;
     width: 98%;
-
 }
 .start .button h3{
     font-size: 1rem ;
     color: white;
     padding-top: 1.06rem;
     text-align: center;
-    font-weight: 400;
-    
+    font-weight: 400; 
 }
+/*information*/
+.info {
+    background-color: rgb(245, 245, 245);
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+.info .quote {
+    max-width:55%;
+    height: auto;
+    padding: 2.3rem 1.7rem;
+    color:rgb(78, 78, 78);
+}
+.info .quote img {
+    max-width: 100%;
+    height: auto;
+    padding-bottom: 2.3rem;
+}
+.info .quote h1 {
+    font-size: 2rem;
+    font-weight:bolder;
+    margin-bottom: 1.45rem;
+}
+.info .quote p {
+    font-weight:300;
+    font-size: 0.9rem;
+    color: rgb(105, 105, 105);
+    margin-bottom: 2rem;
+    line-height: 1.5;
+}
+.info .quote h6 {
+    font-weight: 500;
+    font-size: 0.78rem;
+    color: rgb(61, 61, 61);
+}
+.info .orientation {
+    max-width: 40%;
+    padding-top: 1.5rem;
+    height: auto;
+    border-left: 0.1rem solid rgb(230, 230, 230);
+}
+.info .orientation .list {
+    display: flex;
+    border-bottom : 0.23rem double rgb(230, 230, 230);
+}
+.info .orientation .list img {
+    width: 35%;
+    height: auto;
+    padding: 0.72rem;
+}
+.info .orientation .content {
+    width: 65%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.info .orientation .content p {
+    font-weight:300;
+    font-size: 0.9rem;
+    color: rgb(105, 105, 105);
+    line-height: 1.5;
+}
+.info .orientation .content h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: rgb(78, 78, 78);
+    margin-bottom: 0.36rem;
+}
+.info .orientation .content h6 {
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: rgb(159, 119, 224);
+    margin-top: 0.36rem;
+}
+.info .orientation :hover {
+    background-color: rgb(221, 221, 221);
+}
+/*courses*/
