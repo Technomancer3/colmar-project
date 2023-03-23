@@ -32,6 +32,9 @@ html {
     align-items: center;
     justify-content: space-between;
 } 
+.header .mobile-nav {
+    display: none;
+}
 .header .logo {
     display: inline-flex;
 }   
@@ -57,6 +60,24 @@ html {
 }
 .header .nav p {
     margin-left: 0.72rem;
+}
+@media only screen and (max-width: 1024px){
+.header .logo {
+    display: none;
+}
+.header .nav {
+    display: none;
+}
+
+.header .mobile-nav {
+    width: 100%;
+    display :inline-flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .mobile-nav div {
+    margin: 0 auto;
+}
 }
 /*header*/
 .start {
@@ -103,6 +124,21 @@ html {
     text-align: center;
     font-weight: 400; 
 }
+@media only screen and (max-width: 1024px){
+.start {
+    flex-direction: column;
+    padding-bottom: 1.45rem;
+}
+.start img {
+    max-width: 100%;
+    padding: 0;
+    padding-bottom: 1.45rem;
+} 
+.start .startinfo {
+    padding-right: 0.72rem;
+    padding-left: 0.72rem;
+}  
+}    
 /*information*/
 .info {
     background-color: rgb(245, 245, 245);
@@ -181,6 +217,39 @@ html {
 .info .orientation :hover {
     background-color: rgb(221, 221, 221);
 }
+@media only screen and (max-width: 1024px){
+
+.info .quote {
+    display: none;
+}
+.info .orientation {
+    max-width: 100%;
+    border-left-style: none;
+    padding : 0.72rem;
+    margin: 0 auto;
+    border-bottom: 1px solid rgb(199, 199, 199);
+
+}
+.info .orientation .list {
+    border-bottom-style: none;
+    flex-direction: column;
+}
+.info .orientation .list img {
+    width: 100%;
+    height: 50vh;
+    padding: 0;
+    object-fit: cover;
+}
+.info .orientation .list .content {
+    width: 90%;
+    margin: 1.45rem 0.72rem;
+}
+}
+@media only screen and (max-width: 500px){
+    .info .orientation .list img {
+        height: 30vh;
+}
+}
 /*courses*/
 .courses {
     background-color: rgb(230, 230, 230);
@@ -229,6 +298,36 @@ html {
     color: rgb(105, 105, 105);
     margin-left: 0.72rem;
     margin-top: 0.72rem;
+}
+@media only screen and (max-width: 1024px){
+.courses {
+    background-color: rgb(245, 245, 245);
+    padding: 1.45rem 0.72rem;
+    padding-bottom: 1.45rem;
+    border-bottom: 1px solid rgb(199, 199, 199); 
+}
+.courses img {
+    display: none;
+}
+.courses h4 {
+    display: none;
+}
+.courses p {
+    display: none;
+}
+.courses .selection {
+    flex-direction: column;
+}
+.courses .selection .list h3 {
+    margin-top: 1.09rem;
+    margin-left: 0.72rem;
+    margin-bottom: 1.09rem;
+}
+.courses .selection .list {
+    background-color: rgb(221, 221, 221);
+    max-width: 100%;
+    margin-bottom: 0.36rem;
+}
 }
 /*thesis*/
 .examples {
@@ -306,6 +405,30 @@ html {
 .examples .selection :hover {
     background-color: rgb(221, 221, 221);
 }
+@media only screen and (max-width: 1024px) {
+.examples .selection {
+    display: none;
+}
+.examples .quote p {
+    display: none;
+}
+.examples .quote h3 {
+    display: none;
+}
+.examples {
+    padding: 0;
+    padding-top: 1.45rem;
+    padding-bottom: 1.09rem;
+    background-color: rgb(245, 245, 245);
+}
+.examples .quote{
+    max-width: 100%;
+    margin: 0;
+}
+.examples .quote video {
+    padding: 0;
+}
+}
 /*footer*/
 .footer {
     display: flex;
@@ -327,4 +450,15 @@ html {
 }
 .footer .nav3 p {
     margin-left: 0.36rem;
+}
+@media only screen and (max-width: 1024px) {
+.footer {
+    padding-bottom: 0.72rem;
+    margin: 0;
+    color: rgb(100, 100, 100);
+    background-color: rgb(245, 245, 245);
+}
+.footer .nav3 {
+    display: none;
+}
 }
